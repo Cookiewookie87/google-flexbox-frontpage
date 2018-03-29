@@ -1,0 +1,54 @@
+/* Fake Google CSS */
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+header {
+    margin: 20px 20px 0 0;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+header ul li a{
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+header ul li{
+    padding-left: 10px;
+}
+#app{
+    margin-top: 3px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#google_logo{
+    align-items: center;
+    margin: 100px 0 20px 0;
+}
+main form {
+    display: flex;
+    flex-flow: wrap;
+    width: 520px;
+}
+
+main form input{
+    width: 100%;
+}
+footer{
+    height: 100%;
+}
+
