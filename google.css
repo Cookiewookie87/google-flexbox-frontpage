@@ -4,9 +4,14 @@
     margin: 0;
     padding: 0;
 }
-body {
+html, body {
     font-family: Arial, sans-serif;
     font-size: 13px;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 header {
     margin: 20px 20px 0 0;
@@ -14,8 +19,11 @@ header {
 header ul{
     display: flex;
     list-style-type: none;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
+}
+header ul li{
+    padding-left: 10px;
 }
 header ul li a{
     color: rgba(0,0,0,0.87);
@@ -24,31 +32,73 @@ header ul li a{
 header ul li a:hover{
     text-decoration: underline;
 }
-header ul li{
-    padding-left: 10px;
-}
 #app{
     margin-top: 3px;
 }
 main{
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
 }
 #google_logo{
-    align-items: center;
-    margin: 100px 0 20px 0;
+    width: 272px;
+    height: auto;
+    margin: 150px 0 30px 0;
 }
-main form {
+form{
     display: flex;
     flex-flow: wrap;
-    width: 520px;
+    justify-content: center;
+    width: 500px;
 }
-
-main form input{
+form input{
     width: 100%;
+    width: 528px;
+    height: 44px;
+    padding: 6px 9px 6px 16px;
+    border: 1px solid #EAEAEA;
+    font-size: large;
+    box-shadow: 0 2px 3px #EAEAEA;
+    margin-bottom: 40px;
+}
+button{
+    display: flex;
+    color: #757575;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+button:nth-child(2){
+    margin-right: 10px;
+}
+main p a{
+    text-decoration: none;
+    color: #1a0dab;
+}
+main p a:hover{
+    text-decoration: underline;
 }
 footer{
-    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    height: 100%; /*Why does this push Slovenia up?*/
 }
+footer p{
+    display: block;
+    width: 100%;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    align-self: flex-end;
+}
+footer #neki1{
 
+}
+footer #neki2{
+
+}
